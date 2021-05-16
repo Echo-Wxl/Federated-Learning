@@ -6,46 +6,46 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 1. [Contents](#1.Contents)
 
-2. [Research Papers](2. Research Papers)
+2. [ResearchPapers](2.ResearchPapers)
 
-   2.1 [Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)](#2.1 Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI))
+   2.1 [Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)](#2.1Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI))
 
-   - [ICML 2020](#ICML 2020)
-   - [ICML 2019](#ICML 2019)
-   - [NeurIPS 2020](#NeurIPS 2020)
-   - [NeurIPS 2016-2019](#NeurIPS 2016-2019)
-   - [AAAI 2021](#AAAI 2021)
-   - [AAAI 2020](#AAAI 2020)
-   - [IJCAI 2021](#IJCAI 2021)
-   - [IJCAI 2020](#IJCAI 2020)
-   - [ICLR 2021](#ICLR 2021)
-   - [KDD 2020](#KDD 2020)
+   - [ICML2020](#ICML2020)
+   - [ICML2019](#ICML2019)
+   - [NeurIPS2020](#NeurIPS2020)
+   - [NeurIPS2016-2019](#NeurIPS2016-2019)
+   - [AAAI2021](#AAAI2021)
+   - [AAAI2020](#AAAI2020)
+   - [IJCAI2021](#IJCAI2021)
+   - [IJCAI2020](#IJCAI2020)
+   - [ICLR2021](#ICLR2021)
+   - [KDD2020](#KDD2020)
 
-   2.2 [By research area](#2.2 By research area)
+   2.2 [ByResearchArea](#2.2ByResearchArea)
 
    - [Survey](#Survey)
-   - [Vertical FL](#Vertical FL)
-   - [Horizontal FL](#Horizontal FL)
+   - [VerticalFL](#VerticalFL)
+   - [HorizontalFL](#Horizontal FL)
 
-3. [Tutorials](#3. Tutorials )
+3. [Tutorials](#3.Tutorials )
 
-   3.1 [book](#3.1 book)
+   3.1 [book](#3.1book)
 
-   3.2 [blogs](#3.2 blogs)
+   3.2 [blogs](#3.2blogs)
 
-   3.3 [ppt](#3.3 ppt)
+   3.3 [ppt](#3.3ppt)
 
-4. [Frameworks](#4. Frameworks)
+4. [Frameworks](#4.Frameworks)
 
-5. [Company & Application](#5. Company & Application)
+5. [Company & Application](#5.Company&Application)
 
 ------
 
-##  2.Research Papers
+##  2.ResearchPapers
 
-###  2.1 Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)
+###  2.1Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)
 
-####  ICML 2020
+####  ICML2020
 
 - [Federated Learning with Only Positive Labels](https://arxiv.org/pdf/2004.10342.pdf);Google Research;2020;label deficiency in multi-class classification
 - [SCAFFOLD: Stochastic Controlled Averaging for Federated Learning](https://arxiv.org/abs/1910.06378);Google Research;2020;non-iid
@@ -53,13 +53,13 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [FetchSGD: Communication-Efficient Federated Learning with Sketching](https://arxiv.org/abs/2007.07682);UC Berkeley;2020;communication cost
 - [From Local SGD to Local Fixed-Point Methods for Federated Learning](https://arxiv.org/pdf/2004.01442.pdf);KAUST;2020;communication cost
 
-####  ICML 2019
+####  ICML2019
 
 - [Analyzing Federated Learning through an Adversarial Lens](http://proceedings.mlr.press/v97/bhagoji19a/bhagoji19a.pdf)
 - [Bayesian Nonparametric Federated Learning of Neural Networks](http://proceedings.mlr.press/v97/yurochkin19a/yurochkin19a.pdf)
 - [Agnostic Federated Learning](http://proceedings.mlr.press/v97/mohri19a/mohri19a.pdf)
 
-####  NeurIPS 2020
+####  NeurIPS2020
 
 * [Personalized Federated Learning with Moreau Envelopes](https://arxiv.org/abs/2006.08848)
 * [Lower Bounds and Optimal Algorithms for Personalized Federated Learning](https://papers.nips.cc/paper/2020/file/187acf7982f3c169b3075132380986e4-Paper.pdf) [KAUST]
@@ -86,7 +86,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [Election Coding for Distributed Learning: Protecting SignSGD against Byzantine Attacks](https://papers.nips.cc/paper/2020/file/a7f0d2b95c60161b3f3c82f764b1d1c9-Paper.pdf)
 * [Differentially-Private Federated Linear Bandits](http://web.mit.edu/dubeya/www/files/dp_linucb_20.pdf) [MIT]
 
-#### NeurIPS 2016-2019
+#### NeurIPS2016-2019
 
 - [Federated Optimization: Distributed Optimization Beyond the Datacenter]((https://arxiv.org/pdf/1511.03575.pdf)) NIPS 2016 workshop
 - [Practical Secure Aggregation for Federated Learning on User-Held Data](https://arxiv.org/pdf/1611.04482.pdf) NIPS 2016 workshop
@@ -94,7 +94,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [Federated Multi-Task Learning](https://papers.nips.cc/paper/2017/hash/6211080fa89981f66b1a0c9d55c61d0f-Abstract.html) NIPS 2017
 - [Deep Leakage from Gradients](https://papers.nips.cc/paper/9617-deep-leakage-from-gradients.pdf) NIPS 2019
 
-####  AAAI 2021
+####  AAAI2021
 
 * [Federated Multi-Armed Bandits](https://arxiv.org/abs/2101.12204)
 * [Curse or Redemption? How Data Heterogeneity Affects the Robustness of Federated Learning](https://www.aaai.org/AAAI21Papers/AAAI-8990.ZawadS.pdf)
@@ -112,7 +112,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [Federated Block Coordinate Descent Scheme for Learning Global and Personalized Models](https://arxiv.org/abs/2012.13900)
 * [Addressing Class Imbalance in Federated Learning](https://arxiv.org/abs/2008.06217)
 
-#### AAAI 2020
+#### AAAI2020
 
 - [Federated Learning for Vision-­‐and-­‐Language Grounding Problems](https://ojs.aaai.org/index.php/AAAI/article/view/6824/6678);2020
 - [Federated Latent Dirichlet Allocation: A Local Differential Privacy Based Framework](https://ojs.aaai.org/index.php/AAAI/article/download/6096/5952);2020
@@ -120,7 +120,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [Robust Federated Learning via Collaborative Machine Teaching](https://ojs.aaai.org/index.php/AAAI/article/download/5826/5682);2020
 - [Practical Federated Gradient Boosting Decision Trees](https://ojs.aaai.org/index.php/AAAI/article/download/5895/5751);2020
 
-####  IJCAI 2021
+####  IJCAI2021
 
 * [Collaborative Fairness in Federated Learning](https://arxiv.org/abs/2008.12161) [IJCAI 2021 Workshop Best Paper] 
 * [FPGA-Based Hardware Accelerator of Homomorphic Encryption for Efficient Federated Learning](FPGA-Based Hardware Accelerator of Homomorphic Encryption for Efficient Federated Learning) [IJCAI 2021 Workshop Best Student Paper]
@@ -137,12 +137,12 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [Privacy Threats Against Federated Matrix Factorization](https://arxiv.org/abs/2007.01587) [IJCAI 2021 Workshop]
 * [TF-SProD: Time Fading based Sensitive Pattern Hiding in Progressive Data](http://fl-ijcai20.federated-learning.org/FL-IJCAI20_paper_17.pdf)  [IJCAI 2021 Workshop]
 
-#### IJCAI 2020
+#### IJCAI2020
 
 - [Federated Meta-Learning for Fraudulent Credit Card Detection](https://www.ijcai.org/Proceedings/2020/0642.pdf)
 - [A Multi-player Game for Studying Federated Learning Incentive Schemes](https://www.ijcai.org/Proceedings/2020/0769.pdf)
 
-#### ICLR 2021
+#### ICLR2021
 
 - [Federated Learning Based on Dynamic Regularization](https://openreview.net/forum?id=B7v4QMR6Z9w)
 - [Adaptive Federated Optimization](https://openreview.net/forum?id=LkFG3lB13U5)
@@ -155,14 +155,14 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients](https://openreview.net/forum?id=TNkPBBYFkXg)
 - [Personalized Federated Learning with First Order Model Optimization](https://openreview.net/forum?id=ehJqJQk9cw)
 
-#### KDD 2020
+#### KDD2020
 
 * [FedFast: Going Beyond Average for Faster Training of Federated Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3394486.3403176)
 * [Federated Doubly Stochastic Kernel Learning for Vertically Partitioned Data](https://arxiv.org/pdf/2008.06197)
 * [FedCD: Improving Performance in non-IID Federated Learning](https://arxiv.org/pdf/2006.09637) [KDD20 Workshop]
 * [Resource-Constrained Federated Learning with Heterogeneous Labels and Models](https://arxiv.org/pdf/2011.03206) [KDD2020 Workshop]
 
-###  2.2 By research area
+###  2.2ByResearchArea
 
 ####  Survey
 
@@ -182,26 +182,26 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [Federated Learning for 6G Communications: Challenges, Methods, and Future Directions](https://arxiv.org/pdf/2006.02931.pdf)
 * [Federated Learning for Wireless Communications: Motivation, Opportunities and Challenges](https://arxiv.org/abs/1908.06847)
 
-####  Vertical FL
+####  VerticalFL
 
-####  Horizontal FL
+####  HorizontalFL
 
-##  3. Tutorials 
+##  3.Tutorials 
 
-### 3.1 book
+### 3.1book
 
 - 杨强，刘洋，程勇，康焱，陈天健，于涵，《联邦学习》，电子工业出版社，2020年5月
 
-### 3.2 blogs
+### 3.2blogs
 
 - [杨强，刘洋，陈天健，童咏昕，“联邦学习”，中国计算机学会通讯](https://mp.weixin.qq.com/s?__biz=MjM5MTY5ODE4OQ==&mid=2651453786&idx=1&sn=1f189cbb8ff159428d65e100fdb5dc77&scene=21)
 - [中国信息通信研究院《隐私保护计算与合规应用研究报告 (2021年)](http://www.caict.ac.cn/kxyj/qwfb/ztbg/202104/P020210401408574284747.pdf)
 
-### 3.3 ppt
+### 3.3ppt
 
 - [ADL115《隐私保护机器学习》ppt](./src/ppt/README.md)
 
-## 4. Frameworks
+## 4.Frameworks
 
 * [PySyft](https://github.com/OpenMined/PySyft)
 * [Tensorflow Federated](https://www.tensorflow.org/federated)
@@ -216,7 +216,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [federated](https://github.com/google-research/federated);Google Research
 * [Flower](https://flower.dev/)
 
-##  5. Company & Application
+##  5.Company&Application
 
 
 
