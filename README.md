@@ -6,7 +6,15 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 [TOC]
 
+1. [Contents](#1. Contents)
 
+2. [Research Papers](2. Research Papers)
+
+   2.1 [Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)](#2.1 Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI))
+
+   2.2 [By research area](#2.2 By research area)
+
+3. [Tutorials](3. Tutorials )
 
 ------
 
@@ -155,7 +163,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ####  Horizontal FL
 
-##  3. tutorials 
+##  3. Tutorials 
 
 ### 3.1 book
 
