@@ -4,17 +4,40 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ## 1. Contents
 
-[TOC]
-
 1. [Contents](#1. Contents)
 
 2. [Research Papers](2. Research Papers)
 
    2.1 [Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)](#2.1 Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI))
 
+   - [ICML 2020](#ICML 2020)
+   - [ICML 2019](#ICML 2019)
+   - [NeurIPS 2020](#NeurIPS 2020)
+   - [NeurIPS 2016-2019](#NeurIPS 2016-2019)
+   - [AAAI 2021](#AAAI 2021)
+   - [AAAI 2020](#AAAI 2020)
+   - [IJCAI 2021](#IJCAI 2021)
+   - [IJCAI 2020](#IJCAI 2020)
+   - [ICLR 2021](#ICLR 2021)
+   - [KDD 2020](#KDD 2020)
+
    2.2 [By research area](#2.2 By research area)
 
-3. [Tutorials](3. Tutorials )
+   - [Survey](#Survey)
+   - [Vertical FL](#Vertical FL)
+   - [Horizontal FL](#Horizontal FL)
+
+3. [Tutorials](#3. Tutorials )
+
+   3.1 [book](#3.1 book)
+
+   3.2 [blogs](#3.2 blogs)
+
+   3.3 [ppt](#3.3 ppt)
+
+4. [Frameworks](#4. Frameworks)
+
+5. [Company & Application](#5. Company & Application)
 
 ------
 
