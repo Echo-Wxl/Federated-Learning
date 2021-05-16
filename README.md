@@ -25,7 +25,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
    - [Survey](#Survey)
    - [VerticalFL](#VerticalFL)
-   - [HorizontalFL](#Horizontal FL)
+   - [HorizontalFL](#HorizontalFL)
 
 3. [Tutorials](#3.Tutorials )
 
