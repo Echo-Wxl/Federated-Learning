@@ -8,7 +8,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 2. [ResearchPapers](2.ResearchPapers)
 
-   2.1 [Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)](#2.1Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI))
+   2.1 [Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAI, AAAI)](#2.1Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAI, AAAI))
 
    - [ICML2020](#ICML2020)
    - [ICML2019](#ICML2019)
@@ -43,7 +43,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ##  2.ResearchPapers
 
-###  2.1Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)
+###  2.1Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAI, AAAI)
 
 ####  ICML2020
 
