@@ -2,9 +2,9 @@
 
 A collection of research papers,  tutorials , blogs and Frameworks on FL
 
-## 1. Contents
+## 1.Contents
 
-1. [Contents](#1. Contents)
+1. [Contents](#1.Contents)
 
 2. [Research Papers](2. Research Papers)
 
@@ -41,7 +41,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ------
 
-##  2. Research Papers
+##  2.Research Papers
 
 ###  2.1 Publications in Top-tier Conference(ICML, NeurIPS, ICLR, CVPR, IJCAR, AAAI)
 
