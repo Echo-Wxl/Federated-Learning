@@ -88,7 +88,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 #### NeurIPS2016-2019
 
-- [Federated Optimization: Distributed Optimization Beyond the Datacenter]((https://arxiv.org/pdf/1511.03575.pdf)) NIPS 2016 workshop
+- [Federated Optimization: Distributed Optimization Beyond the Datacenter](https://arxiv.org/pdf/1511.03575.pdf)) NIPS 2016 workshop
 - [Practical Secure Aggregation for Federated Learning on User-Held Data](https://arxiv.org/pdf/1611.04482.pdf) NIPS 2016 workshop
 - [Differentially Private Federated Learning: A Client Level Perspective](https://arxiv.org/pdf/1712.07557.pdf) NIPS 2017 Workshop
 - [Federated Multi-Task Learning](https://papers.nips.cc/paper/2017/hash/6211080fa89981f66b1a0c9d55c61d0f-Abstract.html) NIPS 2017
