@@ -6,7 +6,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 1. [Contents](#1.Contents)
 
-2. [ResearchPapers](2.ResearchPapers)
+2. [ResearchPapers](#2.ResearchPapers)
 
    2.1 [Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAI, AAAI)](#2.1Top-tier)
 
