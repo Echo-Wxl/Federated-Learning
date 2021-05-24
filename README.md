@@ -192,6 +192,8 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 - 杨强，刘洋，程勇，康焱，陈天健，于涵，《联邦学习》，电子工业出版社，2020年5月
 
+
+
 ### 3.2blogs
 
 - [杨强，刘洋，陈天健，童咏昕，“联邦学习”，中国计算机学会通讯](https://mp.weixin.qq.com/s?__biz=MjM5MTY5ODE4OQ==&mid=2651453786&idx=1&sn=1f189cbb8ff159428d65e100fdb5dc77&scene=21)
