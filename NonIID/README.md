@@ -15,12 +15,12 @@
 
 ### 1.2 分类
 
-在文献 [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) 中，作者以分类任务为例，数据包括图像和类别标签，分别用$x$和$y$表示。针对客户端之间的分布差异，将Non-IID分为下面五种情况：
+在文献 [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) 中，作者以分类任务为例，数据包括图像和类别标签，分别用![](img/formula/x.svg)和![](img/formula/y.svg)表示。针对客户端之间的分布差异，将Non-IID分为下面五种情况：
 
-- **Feature Distribution Skew (Covariate Shift)**：特征分布偏移，具体指的是$P_k(x)$不一致，但是$P_k(y|x)$。比如：不同人的字迹差异很大，客户端A写的“联邦学习”和客户端B写的“联邦学习”都应该被识别为“联邦学习”。
-- **Label Distribution Skew (Prior Probability Shift)**：标签分布偏移，具体指的是$P_k(y)$不一致，但是$P_k(x|y)$ 一致。例如：标签的分布因客户的不同而不同；袋鼠只在澳大利亚内；一个人的脸只出现在世界范围内的某一地区
-- **Same Label, Different Features (Concept Shift 1)**：一样的标签，但却有了不同的表现，具体指的是$P_k(x|y)$ 不一致，但是$P_k(y)$一致。这个需要和第一种FDS区分开来，第一种强调特征变化，但是即便特征不同，依旧可以被识别为相同的类别。而这里指的是，类别集合一致，但是认知的表现形式却不一致。比如：判断一幅人物图像的美丑；唐朝人以胖为美，而现代人以瘦为美
-- **Same Feature, Different Labels (Concept Shift 2)**：一样的图像，但却有了不同的标签，具体指的是$P_k(y|x)$不一致，但是$P_k(x)$一致。例如：同一张图像，客户端A将图像分类为美，而客户端B将图像分类为丑
+- **Feature Distribution Skew (Covariate Shift)**：特征分布偏移，具体指的是![](img/formula/P_k(x).svg)不一致，但是![](img/formula/P_k(y1x).svg)一致。比如：不同人的字迹差异很大，客户端A写的“联邦学习”和客户端B写的“联邦学习”都应该被识别为“联邦学习”。
+- **Label Distribution Skew (Prior Probability Shift)**：标签分布偏移，具体指的是![](img/formula/P_k(y).svg)不一致，但是![](img/formula/P_k(x1y).svg)一致。例如：标签的分布因客户的不同而不同；袋鼠只在澳大利亚内；一个人的脸只出现在世界范围内的某一地区
+- **Same Label, Different Features (Concept Shift 1)**：一样的标签，但却有了不同的表现，具体指的是![](img/formula/P_k(x1y).svg)不一致，但是![](img/formula/P_k(y).svg)一致。这个需要和第一种FDS区分开来，第一种强调特征变化，但是即便特征不同，依旧可以被识别为相同的类别。而这里指的是，类别集合一致，但是认知的表现形式却不一致。比如：判断一幅人物图像的美丑；唐朝人以胖为美，而现代人以瘦为美
+- **Same Feature, Different Labels (Concept Shift 2)**：一样的图像，但却有了不同的标签，具体指的是![](img/formula/P_k(y1x).svg)不一致，但是![](img/formula/P_k(x).svg)一致。例如：同一张图像，客户端A将图像分类为美，而客户端B将图像分类为丑
 - **Quantity Skew**：客户端上样本数目差异巨大
 
 以上五种分布差异并不是严格割裂开来的，在实际场景中往往包含多种分布不一致情形。另外，不同的分布不一致情形具有不同的处理方法，因此可以在实际任务中判断场景数据和哪一种情况比较接近，然后再进行寻求相应的方法处理。
@@ -37,20 +37,16 @@
 
 其中：左边图是IID情形，右边图是NonIID情形。这里面主要比较了使用SGD在数据集中时更新以及使用FedAvg在联邦学习场景下更新的过程
 
-- $w^{(c)}$ 指的是使用SGD进行数据中心化（Data Centralized）更新的权重变化，也就是在所有数据上进行更新
-- $w^{(1)},...,w^{(k)}$  指的是客户端1-K上的权重变化
-- $w^{(f)}$是$w^{(1)},...,w^{(k)}$聚合之后的结果，也就是FedAvg中服务器全局聚合之后的权重结果
+-  ![](img/formula/w^{(c)}.svg)指的是使用SGD进行数据中心化（Data Centralized）更新的权重变化，也就是在所有数据上进行更新
+- ![](img/formula/w^{(1)},...,w^{(k)}.svg)  指的是客户端1-K上的权重变化
+- ![](img/formula/w^{(f)}.svg)是![](img/formula/w^{(1)},...,w^{(k)}.svg)聚合之后的结果，也就是FedAvg中服务器全局聚合之后的权重结果
 
 从图中可以看出：
 
-- 在IID设置下，一开始$w_{(m-1)T}^{(f)}$是在第m-1个全局模型聚合的结果，然后发送到各个客户端，各个客户端进行根据样本更新，由于SGD是随机梯度下降，采样batch size的不确定性，各个客户端的更新并不是完全同向的，更新了T步之后，客户端1上得到了权重$w_{mT}^{(1)}$，客户端K上得到了$w_{mT}^{(k)}$，最后服务器上聚合的结果是$w_{mT}^{(f)}$，可以看到和$w_{mT}^{(c)}$得比较近
-- 然而在NonIID情形里面，各个客户端上权重的更新方向差异很大，导致最后FedAvg聚合的结果是$w_{mT}^{(f)}$，和SGD的权重$w_{mT}^{(c)}$离得比较远。
+- 在IID设置下，一开始![](img/formula/w_{(m-1)T}^{(f)}.svg)是在第m-1个全局模型聚合的结果，然后发送到各个客户端，各个客户端进行根据样本更新，由于SGD是随机梯度下降，采样batch size的不确定性，各个客户端的更新并不是完全同向的，更新了T步之后，客户端1上得到了权重![](img/formula/w_{mT}^{(1)}.svg)，客户端K上得到了![](img/formula/w_{mT}^{(k)}.svg)，最后服务器上聚合的结果是![](img/formula/w_{mT}^{(f)}.svg)，可以看到和![](img/formula/w_{mT}^{(c)}.svg)得比较近
+- 然而在NonIID情形里面，各个客户端上权重的更新方向差异很大，导致最后FedAvg聚合的结果是![](img/formula/w_{mT}^{(f)}.svg)，和SGD的权重![](img/formula/w_{mT}^{(c)}.svg)离得比较远。
 
-FedAvg聚合得到的权重和SGD更新得到的权重的差异被定义为Weight Divergence，该项越小则说明FedAvg聚合的结果和SGD在集中数据上更新的结果接近。具体定义为：
-$$
-WeightDivergence=\frac{||w_{fedavg}-w_{sgd}||}{||w_{sgd}||}
-$$
-
+FedAvg聚合得到的权重和SGD更新得到的权重的差异被定义为Weight Divergence，该项越小则说明FedAvg聚合的结果和SGD在集中数据上更新的结果接近。具体定义为：![](img/formula/WeightDivergence=.svg)
 ### 2.2 Non-IID导致的问题
 
 - 问题一：各个客户端的数据是非独立同分布的，这种情况下如何保证各个客户端训练的模型依旧可以有效地全局聚合？ 
@@ -63,17 +59,17 @@ $$
 
 ####   方法一：**[Federated Learning with Non-IID Data](https://arxiv.org/abs/1806.00582) ，Yue Zhao，Vikas Chanra；San Jose, CA；arXiv 2018**
 
-文献 [Federated Learning with Non-IID Data](https://arxiv.org/abs/1806.00582) 提出了一种共享数据的方法对NonIID下FedAvg进行改进，记为FedShare。FedShare的做法是留出一个数据集G，该数据集是均匀分布的，所有数据的总数是D，其大小$|G|$和所有数据$|D|$的权重比例为$\beta = |G|/|D|\times 100\%$。首先，该数据集G被用来预训练全局模型，然后下发的时候也会下发一部分全局数据到各个客户端，数目为$\alpha|G|$，客户端同时在这部分全局数据和私有数据上训练。
+文献 [Federated Learning with Non-IID Data](https://arxiv.org/abs/1806.00582) 提出了一种共享数据的方法对NonIID下FedAvg进行改进，记为FedShare。FedShare的做法是留出一个数据集G，该数据集是均匀分布的，所有数据的总数是D，其大小![](img/formula/1G1.svg)和所有数据![](img/formula/1D1.svg)的权重比例为![](img/formula/beta =GDtimes100%.svg)。首先，该数据集G被用来预训练全局模型，然后下发的时候也会下发一部分全局数据到各个客户端，数目为![](img/formula/1alphaG.svg)，客户端同时在这部分全局数据和私有数据上训练。
 
 ![2](img/noniid-2.jpg)
 
-FedShare的示意图和其性能图如下，$\beta = 0$为NonIID下FedAvg的性能，但是随着$\beta$增大，性能逐渐变好。在共享所有数据5%的情况下，Cifar10上可以提升将近30%的性能
+FedShare的示意图和其性能图如下，![](img/formula/beta = 0.svg)为NonIID下FedAvg的性能，但是随着![](img/formula/beta.svg)增大，性能逐渐变好。在共享所有数据5%的情况下，Cifar10上可以提升将近30%的性能
 
 ####  方法二：[The Non-IID Data Quagmire of Decentralized Machine Learning](http://proceedings.mlr.press/v119/hsieh20a/hsieh20a.pdf) , Kevin Hsieh， Amar Phanishayee， Onur Mutlu， Phillip B. Gibbons；Microsoft Research；PMLR 2020
 
 - 实验证明：基于Batch Normalization的方法更容易失败，基于Group Normalization的会好很多
 
-Batch Normalization可以使得优化目标更平坦，以及使用大的学习率，减少了之前使用大学习率会震荡的问题。Batch Normalization的基本做法是对一批样本$S$求平均值和方差的统计量，记为$\mu_S, \sigma_S$ ，然后对这批样本做标准化，即$\hat{x}=\frac{x-\mu_S}{\sigma_S}$，有的时候还会加入$\hat{x}=\alpha\hat{x}+\beta$进行缩放和偏置，其中$\alpha, \beta$ 是可以学习的参数。而$\mu_S, \sigma_S$是通过数据统计出来的，如果Batch Size太小或者不同客户端数据是NonIID的，那么不同客户端上的这些统计量就会差异特别大。
+Batch Normalization可以使得优化目标更平坦，以及使用大的学习率，减少了之前使用大学习率会震荡的问题。Batch Normalization的基本做法是对一批样本![](img/formula/S.svg)求平均值和方差的统计量，记为![](img/formula/mu_Ssigma_S.svg) ，然后对这批样本做标准化，即![](img/formula/hat{x}=frac{x-mu_S}{sigma_S}.svg)，有的时候还会加入![](img/formula/hat{x}=alphahat{x}beta.svg)进行缩放和偏置，其中![](img/formula/alphabeta.svg)是可以学习的参数。而![](img/formula/mu_Ssigma_S.svg)是通过数据统计出来的，如果Batch Size太小或者不同客户端数据是NonIID的，那么不同客户端上的这些统计量就会差异特别大。
 
 ![3](img/noniid-3.jpg)
 
