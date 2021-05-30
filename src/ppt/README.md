@@ -1,4 +1,4 @@
-#  ADL115《隐私保护机器学习》ppt
+#  ADL115《隐私保护机器学习》slide
 
 ##  Contents
 

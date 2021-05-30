@@ -34,7 +34,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
    3.2 [blogs](#3.2blogs)
 
-   3.3 [ppt](#3.3ppt)
+   3.3 [slide](#3.3slide)
 
 4. [Frameworks](#4.Frameworks)
 
@@ -237,9 +237,9 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [Online Comic from Google AI on Federated Learning](https://federated.withgoogle.com/)
 - [GDPR, Data Shotrage and AI , AAAI-19](https://aaai.org/Conferences/AAAI-19/invited-speakers/#yang)
 
-### 3.3ppt
+### 3.3slide
 
-- [《隐私保护机器学习》ppt](./src/ppt/README.md)
+- [《隐私保护机器学习》slide](./src/ppt/README.md)
 - [面向隐私安全保密的联邦学习和迁移学习](./src/ppt/面向隐私安全保密的联邦学习与迁移学习.pdf)
 - [联邦学习的研究和应用](./src/ppt/联邦学习的研究和应用.pdf)
 - [用非对称联邦保护客户隐私](./src/ppt/用非对称联邦保护客户隐私.pdf)
