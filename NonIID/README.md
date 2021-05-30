@@ -69,7 +69,7 @@ FedShare的示意图和其性能图如下，![](img/formula/beta = 0.svg)为NonI
 
 - 实验证明：基于Batch Normalization的方法更容易失败，基于Group Normalization的会好很多
 
-Batch Normalization可以使得优化目标更平坦，以及使用大的学习率，减少了之前使用大学习率会震荡的问题。Batch Normalization的基本做法是对一批样本![](img/formula/S.svg)求平均值和方差的统计量，记为![](img/formula/mu_Ssigma_S.svg) ，然后对这批样本做标准化，即![](img/formula/hat{x}=frac{x-mu_S}{sigma_S}.svg)，有的时候还会加入![](img/formula/hat{x}=alphahat{x}beta.svg)进行缩放和偏置，其中![](img/formula/alphabeta.svg)是可以学习的参数。而![](img/formula/mu_S, sigma_S.svg)是通过数据统计出来的，如果Batch Size太小或者不同客户端数据是NonIID的，那么不同客户端上的这些统计量就会差异特别大。
+Batch Normalization可以使得优化目标更平坦，以及使用大的学习率，减少了之前使用大学习率会震荡的问题。Batch Normalization的基本做法是对一批样本![](img/formula/S.svg)求平均值和方差的统计量，记为![](img/formula/mu_Ssigma_S.svg) ，然后对这批样本做标准化，即![](img/formula/hat{x}=frac{x-mu_S}{sigma_S}.svg)，有的时候还会加入![](img/formula/hat{x}=alphahat{x}beta.svg)进行缩放和偏置，其中![](img/formula/alphabeta.svg)是可以学习的参数。而![](img/formula/mu_Ssigma_S.svg)是通过数据统计出来的，如果Batch Size太小或者不同客户端数据是NonIID的，那么不同客户端上的这些统计量就会差异特别大。
 
 ![3](img/noniid-3.jpg)
 
