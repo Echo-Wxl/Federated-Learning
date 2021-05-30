@@ -15,12 +15,12 @@
 
 ### 1.2 分类
 
-在文献 [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) 中，作者以分类任务为例，数据包括图像和类别标签，分别用![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\x.svg)和![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\y.svg)表示。针对客户端之间的分布差异，将Non-IID分为下面五种情况：
+在文献 [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) 中，作者以分类任务为例，数据包括图像和类别标签，分别用![](img\formula\x.svg)和![](img\formula\y.svg)表示。针对客户端之间的分布差异，将Non-IID分为下面五种情况：
 
-- **Feature Distribution Skew (Covariate Shift)**：特征分布偏移，具体指的是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(x).svg)不一致，但是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(y1x).svg)一致。比如：不同人的字迹差异很大，客户端A写的“联邦学习”和客户端B写的“联邦学习”都应该被识别为“联邦学习”。
-- **Label Distribution Skew (Prior Probability Shift)**：标签分布偏移，具体指的是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(y).svg)不一致，但是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(x1y).svg)一致。例如：标签的分布因客户的不同而不同；袋鼠只在澳大利亚内；一个人的脸只出现在世界范围内的某一地区
-- **Same Label, Different Features (Concept Shift 1)**：一样的标签，但却有了不同的表现，具体指的是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(x1y).svg)不一致，但是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(y).svg)一致。这个需要和第一种FDS区分开来，第一种强调特征变化，但是即便特征不同，依旧可以被识别为相同的类别。而这里指的是，类别集合一致，但是认知的表现形式却不一致。比如：判断一幅人物图像的美丑；唐朝人以胖为美，而现代人以瘦为美
-- **Same Feature, Different Labels (Concept Shift 2)**：一样的图像，但却有了不同的标签，具体指的是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(y1x).svg)不一致，但是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\P_k(x).svg)一致。例如：同一张图像，客户端A将图像分类为美，而客户端B将图像分类为丑
+- **Feature Distribution Skew (Covariate Shift)**：特征分布偏移，具体指的是![](img\formula\P_k(x).svg)不一致，但是![](img\formula\P_k(y1x).svg)一致。比如：不同人的字迹差异很大，客户端A写的“联邦学习”和客户端B写的“联邦学习”都应该被识别为“联邦学习”。
+- **Label Distribution Skew (Prior Probability Shift)**：标签分布偏移，具体指的是![](img\formula\P_k(y).svg)不一致，但是![](img\formula\P_k(x1y).svg)一致。例如：标签的分布因客户的不同而不同；袋鼠只在澳大利亚内；一个人的脸只出现在世界范围内的某一地区
+- **Same Label, Different Features (Concept Shift 1)**：一样的标签，但却有了不同的表现，具体指的是![](img\formula\P_k(x1y).svg)不一致，但是![](img\formula\P_k(y).svg)一致。这个需要和第一种FDS区分开来，第一种强调特征变化，但是即便特征不同，依旧可以被识别为相同的类别。而这里指的是，类别集合一致，但是认知的表现形式却不一致。比如：判断一幅人物图像的美丑；唐朝人以胖为美，而现代人以瘦为美
+- **Same Feature, Different Labels (Concept Shift 2)**：一样的图像，但却有了不同的标签，具体指的是![](img\formula\P_k(y1x).svg)不一致，但是![](img\formula\P_k(x).svg)一致。例如：同一张图像，客户端A将图像分类为美，而客户端B将图像分类为丑
 - **Quantity Skew**：客户端上样本数目差异巨大
 
 以上五种分布差异并不是严格割裂开来的，在实际场景中往往包含多种分布不一致情形。另外，不同的分布不一致情形具有不同的处理方法，因此可以在实际任务中判断场景数据和哪一种情况比较接近，然后再进行寻求相应的方法处理。
@@ -37,20 +37,16 @@
 
 其中：左边图是IID情形，右边图是NonIID情形。这里面主要比较了使用SGD在数据集中时更新以及使用FedAvg在联邦学习场景下更新的过程
 
--  ![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w^{(c)}.svg)指的是使用SGD进行数据中心化（Data Centralized）更新的权重变化，也就是在所有数据上进行更新
-- ![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w^{(1)},...,w^{(k)}.svg)  指的是客户端1-K上的权重变化
-- ![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w^{(f)}.svg)是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w^{(1)},...,w^{(k)}.svg)聚合之后的结果，也就是FedAvg中服务器全局聚合之后的权重结果
+-  ![](img\formula\w^{(c)}.svg)指的是使用SGD进行数据中心化（Data Centralized）更新的权重变化，也就是在所有数据上进行更新
+- ![](img\formula\w^{(1)},...,w^{(k)}.svg)  指的是客户端1-K上的权重变化
+- ![](img\formula\w^{(f)}.svg)是![](img\formula\w^{(1)},...,w^{(k)}.svg)聚合之后的结果，也就是FedAvg中服务器全局聚合之后的权重结果
 
 从图中可以看出：
 
 - 在IID设置下，一开始![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{(m-1)T}^{(f)}.svg)是在第m-1个全局模型聚合的结果，然后发送到各个客户端，各个客户端进行根据样本更新，由于SGD是随机梯度下降，采样batch size的不确定性，各个客户端的更新并不是完全同向的，更新了T步之后，客户端1上得到了权重![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{mT}^{(1)}.svg)，客户端K上得到了![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{mT}^{(k)}.svg)，最后服务器上聚合的结果是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{mT}^{(f)}.svg)，可以看到和![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{mT}^{(c)}.svg)得比较近
 - 然而在NonIID情形里面，各个客户端上权重的更新方向差异很大，导致最后FedAvg聚合的结果是![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{mT}^{(f)}.svg)，和SGD的权重![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\w_{mT}^{(c)}.svg)离得比较远。
 
-FedAvg聚合得到的权重和SGD更新得到的权重的差异被定义为Weight Divergence，该项越小则说明FedAvg聚合的结果和SGD在集中数据上更新的结果接近。具体定义为：
-$$
-WeightDivergence=\frac{||w_{fedavg}-w_{sgd}||}{||w_{sgd}||}
-$$
-
+FedAvg聚合得到的权重和SGD更新得到的权重的差异被定义为Weight Divergence，该项越小则说明FedAvg聚合的结果和SGD在集中数据上更新的结果接近。具体定义为：![](D:\Mydata\github_program\github_mine\Federated-Learning\NonIID\img\formula\WeightDivergence=.svg)
 ### 2.2 Non-IID导致的问题
 
 - 问题一：各个客户端的数据是非独立同分布的，这种情况下如何保证各个客户端训练的模型依旧可以有效地全局聚合？ 
