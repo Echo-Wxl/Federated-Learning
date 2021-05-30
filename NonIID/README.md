@@ -33,7 +33,7 @@
 
 下图展示了联邦学习任务中梯度更新的过程：
 
-![v2-2ae113fb5948d7f0d2fb7b95726193e7_r](C:\Users\wxl\AppData\Local\Temp\v2-2ae113fb5948d7f0d2fb7b95726193e7_r.jpg)
+![1](img\noniid-1.jpg)
 
 其中：左边图是IID情形，右边图是NonIID情形。这里面主要比较了使用SGD在数据集中时更新以及使用FedAvg在联邦学习场景下更新的过程
 
@@ -65,7 +65,7 @@ $$
 
 文献 [Federated Learning with Non-IID Data](https://arxiv.org/abs/1806.00582) 提出了一种共享数据的方法对NonIID下FedAvg进行改进，记为FedShare。FedShare的做法是留出一个数据集G，该数据集是均匀分布的，所有数据的总数是D，其大小$|G|$和所有数据$|D|$的权重比例为$\beta = |G|/|D|\times 100\%$。首先，该数据集G被用来预训练全局模型，然后下发的时候也会下发一部分全局数据到各个客户端，数目为$\alpha|G|$，客户端同时在这部分全局数据和私有数据上训练。
 
-![v2-14809a0b917c88efc3e2bd9b346bb3d8_r](C:\Users\wxl\AppData\Local\Temp\v2-14809a0b917c88efc3e2bd9b346bb3d8_r.jpg)
+![1](img\noniid-2.jpg)
 
 FedShare的示意图和其性能图如下，$\beta = 0$为NonIID下FedAvg的性能，但是随着$\beta$增大，性能逐渐变好。在共享所有数据5%的情况下，Cifar10上可以提升将近30%的性能
 
@@ -75,7 +75,7 @@ FedShare的示意图和其性能图如下，$\beta = 0$为NonIID下FedAvg的性�
 
 Batch Normalization可以使得优化目标更平坦，以及使用大的学习率，减少了之前使用大学习率会震荡的问题。Batch Normalization的基本做法是对一批样本$S$求平均值和方差的统计量，记为$\mu_S, \sigma_S$ ，然后对这批样本做标准化，即$\hat{x}=\frac{x-\mu_S}{\sigma_S}$，有的时候还会加入$\hat{x}=\alpha\hat{x}+\beta$进行缩放和偏置，其中$\alpha, \beta$ 是可以学习的参数。而$\mu_S, \sigma_S$是通过数据统计出来的，如果Batch Size太小或者不同客户端数据是NonIID的，那么不同客户端上的这些统计量就会差异特别大。
 
-![v2-22419d24ec46e586c3df9d885eebedf0_r](C:\Users\wxl\AppData\Local\Temp\v2-22419d24ec46e586c3df9d885eebedf0_r.jpg)
+![1](img\noniid-3.jpg)
 
 文章探寻了几种可能的Normalization的方法，比如：Weight Normalization、Layer Normalization、Weight Renormalization、[Group Normalization](https://arxiv.org/abs/1803.08494)。关于这几种Normalization的细节和区别这里不再介绍，但是实验发现Group Normalization（**使归一化操作的计算不依赖batch size的大小**）在NonIID下性能降低的最少，是最理想的Normalization方法。
 
@@ -83,7 +83,7 @@ Batch Normalization可以使得优化目标更平坦，以及使用大的学习�
 
 - 提出了一种调节通信频率的方法**SkewScout**，可以根据客户端上分布偏移的程度调整相应的通信频率
 
-![v2-274272388ebc5ee2addf8ae0886f1eca_r](C:\Users\wxl\AppData\Local\Temp\v2-274272388ebc5ee2addf8ae0886f1eca_r.jpg)
+![1](img\noniid-4.jpg)
 
 主要包括三个部分：
 
@@ -95,7 +95,7 @@ Batch Normalization可以使得优化目标更平坦，以及使用大的学习�
 
 实验结果：
 
-![v2-b0539b305215b68a336c9bb194f7b06c_r](D:\Data\v2-b0539b305215b68a336c9bb194f7b06c_r.jpg)
+![1](img\noniid-5.jpg)
 
 ### 3.2 针对模型个性化
 
