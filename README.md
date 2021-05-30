@@ -26,6 +26,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
    - [Survey](#Survey)
    - [VerticalFL](#VerticalFL)
    - [HorizontalFL](#HorizontalFL)
+   - [Non-IID](#Non-IID)
 
 3. [Tutorials](#3.Tutorials )
 
@@ -181,10 +182,44 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [A Survey on Federated Learning Systems: Vision, Hype and Reality for Data Privacy and Protection](https://arxiv.org/pdf/1907.09693.pdf)
 * [Federated Learning for 6G Communications: Challenges, Methods, and Future Directions](https://arxiv.org/pdf/2006.02931.pdf)
 * [Federated Learning for Wireless Communications: Motivation, Opportunities and Challenges](https://arxiv.org/abs/1908.06847)
+* [联邦学习算法综述，王健宗，孔令炜](http://www.infocomm-journal.com/bdr/CN/10.11959/j.issn.2096-0271.2020055)
 
 ####  VerticalFL
 
 ####  HorizontalFL
+
+####  Non-IID
+
+- [The Non-IID Data Quagmire of Decentralized Machine Learning](https://arxiv.org/pdf/1910.00189.pdf);Kevin Hsieh， Amar Phanishayee， Onur Mutlu， Phillip B. Gibbons；Microsoft Research；PMLR 2020
+- [Federated Learning with Non-IID Data](https://arxiv.org/pdf/1806.00582.pdf);Yue Zhao，Vikas Chanra；San Jose, CA；arXiv 2018
+- [FedCD: Improving Performance in non-IID Federated Learning. 2020](https://arxiv.org/pdf/2006.09637.pdf)
+- [Survey of Personalization Techniques for Federated Learning](https://arxiv.org/pdf/2003.08673) 
+- [Data selection for federated learning with relevant and irrelevant data at clients](https://arxiv.org/pdf/2001.08300),  Tiffany Tuor, Shiqiang Wang, Bong Jun Ko, Changchang Liu, Kin K. Leung;  arXiv 2020
+- [Three approaches for personalization with applications to federated learning](https://arxiv.org/pdf/2002.10619), Yishay Mansour, Mehryar Mohri, Jae Ro, Ananda Theertha Suresh, arXiv 2020
+- [Life Long Learning: FedFMC: Sequential Efficient Federated Learning on Non-iid Data. 2020](https://arxiv.org/pdf/2006.10937.pdf)
+- [Personalized Federated Learning with Moreau Envelopes. 2020](https://arxiv.org/pdf/2006.08848.pdf)
+- [Proxy Experience Replay: Federated Distillation for Distributed Reinforcement Learning. 2020](https://arxiv.org/pdf/2005.06105.pdf)
+- [Towards Flexible Device Participation in Federated Learning for Non-IID Data. 2020](https://arxiv.org/pdf/2006.06954.pdf)
+- [NeurIPS 2020 submission: An Efficient Framework for Clustered Federated Learning](https://arxiv.org/pdf/2006.04088.pdf)
+- [FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data](https://arxiv.org/pdf/2005.11418.pdf)
+- [Federated learning with hierarchical clustering of local updates to improve training on non-IID data](https://arxiv.org/pdf/2004.11791.pdf)
+- [Federated Learning with Only Positive Labels](https://arxiv.org/pdf/2004.10342.pdf)
+- [Adaptive Personalized Federated Learning](https://arxiv.org/pdf/2003.13461.pdf)
+- [Personalized Federated Learning for Intelligent IoT Applications: A Cloud-Edge based Framework](https://arxiv.org/pdf/2002.10671.pdf)
+- [Three Approaches for Personalization with Applications to Federated Learning](https://arxiv.org/pdf/2002.10619.pdf)
+- [Personalized Federated Learning: A Meta-Learning Approach](https://arxiv.org/pdf/2002.07948.pdf)
+- [Federated Learning with Personalization Layers](https://arxiv.org/pdf/1912.00818.pdf)
+- [Federated Evaluation of On-device Personalization](https://arxiv.org/pdf/1910.10252.pdf)
+- [Overcoming Forgetting in Federated Learning on Non-IID Data](https://arxiv.org/pdf/1910.07796.pdf)
+- [Clustered Federated Learning: Model-Agnostic Distributed Multi-Task Optimization under Privacy Constraints](https://arxiv.org/pdf/1910.01991.pdf)
+- [Improving Federated Learning Personalization via Model Agnostic Meta Learning](https://arxiv.org/pdf/1909.12488.pdf)
+- [Client Adaptation improves Federated Learning with Simulated Non-IID Clients](https://arxiv.org/pdf/2007.04806.pdf)
+- [Adaptive gradient-based meta-learning methods](https://arxiv.org/pdf/1906.02717)
+- [Salvaging federated learning by local adaptation](https://arxiv.org/pdf/2002.04758)
+- [Federated learning of a mixture of global and local models](https://arxiv.org/pdf/2002.05516)
+- [Federated multi-task learning](https://arxiv.org/pdf/1705.10467)
+
+
 
 ##  3.Tutorials 
 
@@ -192,16 +227,25 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 - 杨强，刘洋，程勇，康焱，陈天健，于涵，《联邦学习》，电子工业出版社，2020年5月
 
-
-
 ### 3.2blogs
 
 - [杨强，刘洋，陈天健，童咏昕，“联邦学习”，中国计算机学会通讯](https://mp.weixin.qq.com/s?__biz=MjM5MTY5ODE4OQ==&mid=2651453786&idx=1&sn=1f189cbb8ff159428d65e100fdb5dc77&scene=21)
 - [中国信息通信研究院《隐私保护计算与合规应用研究报告 (2021年)](http://www.caict.ac.cn/kxyj/qwfb/ztbg/202104/P020210401408574284747.pdf)
+- [Federated Learning Comic](https://federated.withgoogle.com/)
+- [Federated Learning: Collaborative Machine Learning without Centralized Training Data](http://ai.googleblog.com/2017/04/federated-learning-collaborative.html)
+- [An Introduction to Federated Learning](http://vision.cloudera.com/an-introduction-to-federated-learning/)
+- [Online Comic from Google AI on Federated Learning](https://federated.withgoogle.com/)
+- [GDPR, Data Shotrage and AI , AAAI-19](https://aaai.org/Conferences/AAAI-19/invited-speakers/#yang)
 
 ### 3.3ppt
 
 - [ADL115《隐私保护机器学习》ppt](./src/ppt/README.md)
+- [面向隐私安全保密的联邦学习和迁移学习](./src/ppt/面向隐私安全保密的联邦学习与迁移学习.pdf)
+- [联邦学习的研究和应用](./src/ppt/联邦学习的研究和应用.pdf)
+- [用非对称联邦保护客户隐私](./src/ppt/用非对称联邦保护客户隐私.pdf)
+- [云原生联邦学习的开源框架](./src/ppt/云原生联邦学习的开源框架.pdf)
+- [联邦学习与安全多方计算](./src/ppt/联邦学习与安全多方计算.pdf)
+- [FATE：联邦学习技术落地与应用](./src/ppt/FATE：联邦学习技术落地与应用.pdf)
 
 ## 4.Frameworks
 
@@ -210,7 +254,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [FATE](https://github.com/FederatedAI/FATE); WeBank
 * [FedLearner](https://github.com/bytedance/fedlearner) ByteDance
 * [PaddleFL](https://github.com/PaddlePaddle/PaddleFL); Baidu 
-* [LEAF](https://leaf.cmu.edu/)
+* [LEAF: A Benchmark for Federated Settings ](https://leaf.cmu.edu/)
 * [FedML:A Research Library and Benchmark for Federated Machine Learning](https://github.com/FedML-AI/FedML)
 * [XayNe:Open source framework for federated learning in Rust]( https://xaynet.webflow.io/)
 * [PyTorch Federated Learning](https://github.com/shaoxiongji/federated-learning)
@@ -220,5 +264,19 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ##  5.Company&Application
 
-
+|     公司     | 产品&地址                                                    | 开源地址                                       |
+| :----------: | ------------------------------------------------------------ | ---------------------------------------------- |
+|   微众银行   | [联邦学习FATE](https://fate.fedai.org/)                      | https://github.com/FederatedAI/FATE            |
+|   蚂蚁金服   | [摩斯多方安全计算平台](https://antchain.antgroup.com/products/morse) | -                                              |
+|     百度     | [联邦计算](https://anquan.baidu.com/product/federatedcomputing) | https://gitee.com/paddlepaddle/PaddleFL        |
+| 百度安全部门 | [MesaTEE 安全计算平台](https://anquan.baidu.com/product/mesatee) | https://github.com/apache/incubator-teaclave   |
+|   京东数科   | [Fedlearn](https://www.jdcloud.com/)                         | -                                              |
+|   洞见智慧   | [Insightone](https://www.insightone.cn/)                     | -                                              |
+|   华控清交   | [PrivPy 多方安全计算平台](https://www.tsingj.com/)           | -                                              |
+|   字节跳动   | [Fedlearner](https://github.com/bytedance/fedlearner)        | https://github.com/bytedance/fedlearner        |
+|   富数科技   | [FMPC](https://www.fudata.cn/)                               | -                                              |
+|    矩阵元    | [rosetta](https://www.matrixelements.com/product/rosetta)    | https://github.com/LatticeX-Foundation/Rosetta |
+|   数犊科技   | [platone](https://www.matrixelements.com/product/platone)    | -                                              |
+|   同盾科技   | https://www.tongdun.cn/                                      | -                                              |
+|   致星科技   | [星云Clustar](https://www.clustar.ai/)                       | -                                              |
 

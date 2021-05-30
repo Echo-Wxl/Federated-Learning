@@ -46,7 +46,10 @@
 - 在IID设置下，一开始![](img/formula/w_{(m-1)T}^{(f)}.svg)是在第m-1个全局模型聚合的结果，然后发送到各个客户端，各个客户端进行根据样本更新，由于SGD是随机梯度下降，采样batch size的不确定性，各个客户端的更新并不是完全同向的，更新了T步之后，客户端1上得到了权重![](img/formula/w_{mT}^{(1)}.svg)，客户端K上得到了![](img/formula/w_{mT}^{(k)}.svg)，最后服务器上聚合的结果是![](img/formula/w_{mT}^{(f)}.svg)，可以看到和![](img/formula/w_{mT}^{(c)}.svg)得比较近
 - 然而在NonIID情形里面，各个客户端上权重的更新方向差异很大，导致最后FedAvg聚合的结果是![](img/formula/w_{mT}^{(f)}.svg)，和SGD的权重![](img/formula/w_{mT}^{(c)}.svg)离得比较远。
 
-FedAvg聚合得到的权重和SGD更新得到的权重的差异被定义为Weight Divergence，该项越小则说明FedAvg聚合的结果和SGD在集中数据上更新的结果接近。具体定义为：![](img/formula/WeightDivergence=.svg)
+FedAvg聚合得到的权重和SGD更新得到的权重的差异被定义为Weight Divergence，该项越小则说明FedAvg聚合的结果和SGD在集中数据上更新的结果接近。具体定义为：
+
+![](img/formula/WeightDivergence=.svg)
+
 ### 2.2 Non-IID导致的问题
 
 - 问题一：各个客户端的数据是非独立同分布的，这种情况下如何保证各个客户端训练的模型依旧可以有效地全局聚合？ 
