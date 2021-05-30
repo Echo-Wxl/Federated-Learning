@@ -239,7 +239,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ### 3.3ppt
 
-- [ADL115《隐私保护机器学习》ppt](./src/ppt/README.md)
+- [《隐私保护机器学习》ppt](./src/ppt/README.md)
 - [面向隐私安全保密的联邦学习和迁移学习](./src/ppt/面向隐私安全保密的联邦学习与迁移学习.pdf)
 - [联邦学习的研究和应用](./src/ppt/联邦学习的研究和应用.pdf)
 - [用非对称联邦保护客户隐私](./src/ppt/用非对称联邦保护客户隐私.pdf)
@@ -264,19 +264,19 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ##  5.Company&Application
 
-|     公司     | 产品&地址                                                    | 开源地址                                       |
-| :----------: | ------------------------------------------------------------ | ---------------------------------------------- |
-|   微众银行   | [联邦学习FATE](https://fate.fedai.org/)                      | https://github.com/FederatedAI/FATE            |
-|   蚂蚁金服   | [摩斯多方安全计算平台](https://antchain.antgroup.com/products/morse) | -                                              |
-|     百度     | [联邦计算](https://anquan.baidu.com/product/federatedcomputing) | https://gitee.com/paddlepaddle/PaddleFL        |
-| 百度安全部门 | [MesaTEE 安全计算平台](https://anquan.baidu.com/product/mesatee) | https://github.com/apache/incubator-teaclave   |
-|   京东数科   | [Fedlearn](https://www.jdcloud.com/)                         | -                                              |
-|   洞见智慧   | [Insightone](https://www.insightone.cn/)                     | -                                              |
-|   华控清交   | [PrivPy 多方安全计算平台](https://www.tsingj.com/)           | -                                              |
-|   字节跳动   | [Fedlearner](https://github.com/bytedance/fedlearner)        | https://github.com/bytedance/fedlearner        |
-|   富数科技   | [FMPC](https://www.fudata.cn/)                               | -                                              |
-|    矩阵元    | [rosetta](https://www.matrixelements.com/product/rosetta)    | https://github.com/LatticeX-Foundation/Rosetta |
-|   数犊科技   | [platone](https://www.matrixelements.com/product/platone)    | -                                              |
-|   同盾科技   | https://www.tongdun.cn/                                      | -                                              |
-|   致星科技   | [星云Clustar](https://www.clustar.ai/)                       | -                                              |
+|     公司     |                          产品&地址                           |                    开源地址                    |
+| :----------: | :----------------------------------------------------------: | :--------------------------------------------: |
+|   微众银行   |           [联邦学习FATE](https://fate.fedai.org/)            |      https://github.com/FederatedAI/FATE       |
+|   蚂蚁金服   | [摩斯多方安全计算平台](https://antchain.antgroup.com/products/morse) |                       -                        |
+|     百度     | [联邦计算](https://anquan.baidu.com/product/federatedcomputing) |    https://gitee.com/paddlepaddle/PaddleFL     |
+| 百度安全部门 | [MesaTEE 安全计算平台](https://anquan.baidu.com/product/mesatee) |  https://github.com/apache/incubator-teaclave  |
+|   京东数科   |             [Fedlearn](https://www.jdcloud.com/)             |                       -                        |
+|   洞见智慧   |           [Insightone](https://www.insightone.cn/)           |                       -                        |
+|   华控清交   |      [PrivPy 多方安全计算平台](https://www.tsingj.com/)      |                       -                        |
+|   字节跳动   |    [Fedlearner](https://github.com/bytedance/fedlearner)     |    https://github.com/bytedance/fedlearner     |
+|   富数科技   |                [FMPC](https://www.fudata.cn/)                |                       -                        |
+|    矩阵元    |  [rosetta](https://www.matrixelements.com/product/rosetta)   | https://github.com/LatticeX-Foundation/Rosetta |
+|   数犊科技   |  [platone](https://www.matrixelements.com/product/platone)   |                       -                        |
+|   同盾科技   |                   https://www.tongdun.cn/                    |                       -                        |
+|   致星科技   |            [星云Clustar](https://www.clustar.ai/)            |                       -                        |
 
