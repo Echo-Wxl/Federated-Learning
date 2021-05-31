@@ -124,7 +124,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 ####  IJCAI2021
 
 * [Collaborative Fairness in Federated Learning](https://arxiv.org/abs/2008.12161) [IJCAI 2021 Workshop Best Paper] 
-* [FPGA-Based Hardware Accelerator of Homomorphic Encryption for Efficient Federated Learning](FPGA-Based Hardware Accelerator of Homomorphic Encryption for Efficient Federated Learning) [IJCAI 2021 Workshop Best Student Paper]
+* [FPGA-Based Hardware Accelerator of Homomorphic Encryption for Efficient Federated Learning](https://arxiv.org/abs/2007.10560) [IJCAI 2021 Workshop Best Student Paper]
 * [Federated Learning with Diversified Preference for Humor Recognition](https://arxiv.org/abs/2012.01675) [IJCAI 2021 Workshop Best Application Paper]
 * [Heterogeneous Data-Aware Federated Learning](https://arxiv.org/abs/2011.06393) [IJCAI 2021 Workshop]
 * [Privacy-Preserving Technology to Help Millions of People: Federated Prediction Model for Stroke Prevention](https://arxiv.org/abs/2006.10517) [IJCAI 2021 Workshop]
