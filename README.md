@@ -147,7 +147,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 - [Federated Learning Based on Dynamic Regularization](https://openreview.net/forum?id=B7v4QMR6Z9w)
 - [Adaptive Federated Optimization](https://openreview.net/forum?id=LkFG3lB13U5)
-- [Federated Learning via Posterior Averaging: A New Perspective and Practical Algorithms](https://openreview.net/forum?id=GFsU8a0sGB)
+- [Federated Learning via Posterior Avgeraging: A New Perspective and Practical Algorithms](https://openreview.net/forum?id=GFsU8a0sGB)
 - [Achieving Linear Speedup with Partial Worker Participation in Non-IID Federated Learning ](https://openreview.net/forum?id=jDdzh5ul-d)
 - [Federated Semi-Supervised Learning with Inter-Client Consistency & Disjoint Learning](https://openreview.net/forum?id=ce6CFXBh30h)
 - [FedBN: Federated Learning on Non-IID Features via Local Batch Normalization](https://openreview.net/forum?id=6YEQUn0QICG)
@@ -186,7 +186,21 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ####  VerticalFL
 
-####  HorizontalFL
+- ["Communication-Efficient Multimodal Split Learning for mmWave Received Power Prediction,"Yusuke Koda, Jihong Park, Mehdi Bennis, Koji Yamamoto, Takayuki Nishio, and Masahiro Morikura,  Mar. 2020.](https://arxiv.org/abs/2003.00645)
+- ["Federated Hierarchical Hybrid Networks for Clickbait Detection,"Feng Liao, Hankz Hankui Zhuo, Xiaoling Huang, and Yu Zhang,  Jun. 2019.](https://arxiv.org/abs/1906.00638)
+- [ "Private federated learning on vertically partitioned data via entity resolution and additively homomorphic encryption,"Stephen Hardy, Wilko Henecka, Hamish Ivey-Law, Richard Nock, Giorgio Patrini, Guillaume Smith, and Brian Thorne, Nov. 2017.](https://arxiv.org/abs/1711.10677)
+- [ "FDML: A Collaborative Machine Learning Framework for Distributed Features," Yaochen Hu, Di Niu, Jianming Yang, and Shengping Zhou,May 2019.](https://arxiv.org/abs/1812.06415)
+- [ "Learning Privately over Distributed Features: An ADMM Sharing Approach,"Yaochen Hu, Peng Liu, Linglong Kong, and Di Niu, Jul. 2019.](https://arxiv.org/abs/1907.07735)
+- ["SplitFed: When Federated Learning Meets Split Learning,"Chandra Thapa, M. A. P. Chamikara, and Seyit Camtepe,  Apr. 2020.]( https://arxiv.org/abs/2004.12088v1)
+- ["Privacy Enhanced Multimodal Neural Representations for Emotion Recognition,"Mimansa Jaiswal, and Emily Mower Provost, Oct. 2019.](https://arxiv.org/abs/1910.13212v1)
+- ["Privacy-preserving Neural Representations of Text,"Maximin Coavoux, Shashi Narayan, and Shay B. Cohen,  Aug. 2018.](https://arxiv.org/abs/1808.09408)
+- ["PrivyNet: A Flexible Framework for Privacy-Preserving Deep Neural Network Training,"Meng Li, Liangzhen Lai, Naveen Suda, Vikas Chandra, and David Z. Pan,  Sep. 2017.](https://arxiv.org/abs/1709.06161https://arxiv.org/abs/1709.06161)
+- ["One Pixel Image and RF Signal Based Split Learning for mmWave Received Power Prediction," Yusuke Koda, Jihong Park, Mehdi Bennis, Koji Yamamoto, Takayuki Nishio, and Masahiro Morikura, Nov. 2019.](https://arxiv.org/abs/1911.01682)
+- ["Communication-Efficient Multimodal Split Learning for mmWave Received Power Prediction," Yusuke Koda, Jihong Park, Mehdi Bennis, Koji Yamamoto, Takayuki Nishio, and Masahiro Morikura, Mar. 2020.](https://arxiv.org/abs/2003.00645)
+- ["Optimization for Large-Scale Machine Learning with Distributed Features and Observations," Alexandros Nathan, and Diego Klabjan, Apr. 2017.](https://arxiv.org/abs/1610.10060)
+- ["SecureBoost: A Lossless Federated Learning Framework," Kewei Cheng, Tao Fan, Yilun Jin, Yang Liu, Tianjian Chen, Qiang Yang, Jan. 2019.](https://arxiv.org/abs/1901.08755)
+- ["Privacy-Preserving Backpropagation Neural Network Learning," Tingting Chen, Sheng Zhong, Oct. 2009.](https://cse.buffalo.edu/caeiae/documents/pdf/back-propagation-chen-zhong-2009.pdf)
+- ["Split learning for health: Distributed deep learning without sharing raw patient data,"Praneeth Vepakomma, Otkrist Gupta, Tristan Swedish, and Ramesh Raskar,  Dec. 2018.](https://arxiv.org/abs/1812.0056)
 
 ####  Non-IID
 
