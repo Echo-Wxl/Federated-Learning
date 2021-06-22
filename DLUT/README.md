@@ -1,1 +1,1 @@
-# 大连理工大学-人工智能与安全实验室
+# Dalian University of Technology
