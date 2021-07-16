@@ -239,6 +239,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 ### 3.1book
 
 - 杨强，刘洋，程勇，康焱，陈天健，于涵，《联邦学习》，电子工业出版社，2020年5月
+- [隐私机密计算蓝皮书](./src/ppt/隐私机密计算蓝皮书.pdf)
 
 ### 3.2blogs
 
