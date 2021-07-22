@@ -273,9 +273,9 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [FedML:A Research Library and Benchmark for Federated Machine Learning](https://github.com/FedML-AI/FedML)
 * [XayNe:Open source framework for federated learning in Rust]( https://xaynet.webflow.io/)
 * [PyTorch Federated Learning](https://github.com/shaoxiongji/federated-learning)
-* [[FedMA](https://github.com/IBM/federated-learning-lib)](https://github.com/IBM/federated-learning-lib); IBM
+* [FedMA](https://github.com/IBM/federated-learning-lib); IBM
 * [federated](https://github.com/google-research/federated);Google Research
-* [Flower](https://flower.dev/)
+* [Flower](https://github.com/adap/flower)
 
 ##  5.Company&Application
 
@@ -284,6 +284,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 |   微众银行   |           [联邦学习FATE](https://fate.fedai.org/)            |      https://github.com/FederatedAI/FATE       |
 |   蚂蚁金服   | [摩斯多方安全计算平台](https://antchain.antgroup.com/products/morse) |                       -                        |
 |     百度     | [联邦计算](https://anquan.baidu.com/product/federatedcomputing) |    https://gitee.com/paddlepaddle/PaddleFL     |
+|     腾讯     | [Angel PowerFL](https://cloud.tencent.com/solution/powerfl)  |                       -                        |
 | 百度安全部门 | [MesaTEE 安全计算平台](https://anquan.baidu.com/product/mesatee) |  https://github.com/apache/incubator-teaclave  |
 |   京东数科   |             [Fedlearn](https://www.jdcloud.com/)             |                       -                        |
 |   洞见智慧   |           [Insightone](https://www.insightone.cn/)           |                       -                        |
@@ -294,6 +295,8 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 |   数犊科技   |  [platone](https://www.matrixelements.com/product/platone)   |                       -                        |
 |   同盾科技   |                   https://www.tongdun.cn/                    |                       -                        |
 |   致星科技   |            [星云Clustar](https://www.clustar.ai/)            |                       -                        |
+
+
 
 
 
