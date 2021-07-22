@@ -293,7 +293,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 |   富数科技   |                [FMPC](https://www.fudata.cn/)                |                       -                        |
 |    矩阵元    |  [rosetta](https://www.matrixelements.com/product/rosetta)   | https://github.com/LatticeX-Foundation/Rosetta |
 |   数犊科技   |  [platone](https://www.matrixelements.com/product/platone)   |                       -                        |
-|   同盾科技   |                   https://www.tongdun.cn/                    |                       -                        |
+|   同盾科技   |           [同盾智邦平台](https://www.tongdun.cn/)            |                       -                        |
 |   致星科技   |            [星云Clustar](https://www.clustar.ai/)            |                       -                        |
 
 
