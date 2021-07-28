@@ -10,6 +10,8 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
    2.1 [Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAI, AAAI)](#2.1Top-tier)
 
+   - [CVPR2021](#CVPR2021)
+   
    - [ICML2020](#ICML2020)
    - [ICML2019](#ICML2019)
    - [NeurIPS2020](#NeurIPS2020)
@@ -18,11 +20,11 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
    - [AAAI2020](#AAAI2020)
    - [IJCAI2021](#IJCAI2021)
    - [IJCAI2020](#IJCAI2020)
-   - [ICLR2021](#ICLR2021)
+- [ICLR2021](#ICLR2021)
    - [KDD2020](#KDD2020)
 
    2.2 [ByResearchArea](#2.2ByResearchArea)
-
+   
    - [Survey](#Survey)
    - [VerticalFL](#VerticalFL)
    - [Non-IID](#Non-IID)
@@ -44,6 +46,13 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 ##  2.Papers
 
 ###  2.1Top-tier
+
+#### CVPR2021
+
+- [Multi-Institutional Collaborations for Improving Deep Learning-Based Magnetic Resonance Image Reconstruction Using Federated Learning](https://arxiv.org/abs/2103.02148). Pengfei Guo, Puyang Wang, Jinyuan Zhou, Shanshan Jiang, Vishal M. Patel
+- [Model-Contrastive Federated Learning](https://arxiv.org/abs/2103.16257). Qinbin Li, Bingsheng He, Dawn Song
+- [FedDG: Federated Domain Generalization on Medical Image Segmentation via Episodic Learning in Continuous Frequency Space](https://arxiv.org/abs/2103.06030). Quande Liu, Cheng Chen, Jing Qin, Qi Dou, Pheng-Ann Heng
+- [Soteria: Provable Defense Against Privacy Leakage in Federated Learning From Representation Perspective](https://arxiv.org/abs/2012.06043). Jingwei Sun, Ang Li, Binghui Wang, Huanrui Yang, Hai Li, Yiran Chen
 
 ####  ICML2020
 
