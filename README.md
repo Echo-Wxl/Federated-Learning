@@ -11,7 +11,6 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
    2.1 [Top-tier(ICML, NeurIPS, ICLR, CVPR, IJCAI, AAAI)](#2.1Top-tier)
 
    - [CVPR2021](#CVPR2021)
-   
    - [ICML2020](#ICML2020)
    - [ICML2019](#ICML2019)
    - [NeurIPS2020](#NeurIPS2020)
@@ -20,15 +19,15 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
    - [AAAI2020](#AAAI2020)
    - [IJCAI2021](#IJCAI2021)
    - [IJCAI2020](#IJCAI2020)
-- [ICLR2021](#ICLR2021)
+   - [ICLR2021](#ICLR2021)		
    - [KDD2020](#KDD2020)
 
-   2.2 [ByResearchArea](#2.2ByResearchArea)
-   
-   - [Survey](#Survey)
-   - [VerticalFL](#VerticalFL)
-   - [Non-IID](#Non-IID)
-   
+2.2 [ByResearchArea](#2.2ByResearchArea)
+
+- [Survey](#Survey)
+- [VerticalFL](#VerticalFL)
+- [Non-IID](#Non-IID)
+
 3. [Tutorials](#3.Tutorials )
 
    3.1 [book](#3.1book)
