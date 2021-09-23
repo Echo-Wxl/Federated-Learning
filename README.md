@@ -250,6 +250,8 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [隐私机密计算蓝皮书](./src/book/隐私机密计算蓝皮书.pdf)
 - [隐私计算白皮书（2021）](./src/book/隐私计算白皮书（2021年）.pdf)
 - [2021隐私计算行业研究报告](./src/book/2021隐私计算行业研究报告.pdf)
+- [全球数字经济白皮书](./src/book/全球数字经济白皮书.pdf)
+- [2021全球联邦学习研究与应用趋势报告](./src/book/2021全球联邦学习研究与应用趋势报告.pdf)
 
 ### 3.2blogs
 
