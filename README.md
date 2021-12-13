@@ -284,7 +284,8 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ## 4.Frameworks
 
-| 框架名称                 | 所属公司                | 开源地址                                       | 框架简介                                                     | github star |
+
+| 框架名称  | 所属公司  | 开源地址               | 框架简介                                                     | github star |
 | ------------------------ | ----------------------- | ---------------------------------------------- | :----------------------------------------------------------- | ----------- |
 | PySyft                   | OpenMined               | https://github.com/OpenMined/PySyft            | PySyft 是开源社区OpenMined推出的一个用于安全和私有深度学习的 Python 库。<br />它使用联邦学习、差分隐私和加密计算来解耦私人和敏感数据，可以在主要的深度学习框架中使用，<br />例如 TensorFlow 和PyTorch。PySyft 代表了在深度学习程序中启用可靠的隐私模型的首批尝试之一。 | 7800        |
 | FATE                     | 微众银行                | https://github.com/FederatedAI/FATE            | 微众银行AI部门研发了FATE（Federated AI Technology Enabler）联邦学习开源项目，是首个开源的联邦学习工业级框架。<br />目前FATE开源社区已汇聚了700多家企业、300余所高校等科研机构的开发者，是国内最大的联邦学习开源社区。<br />FATE项目使用多方安全计算 (MPC) 以及同态加密 (HE) 技术构建底层安全计算协议，以此支持不同种类的机器学习的安全计算，包括逻辑回归、树算法、深度学习（人工神经网络）和迁移学习等。<br />FATE目前支持三种类型联邦学习算法：横向联邦学习、纵向联邦学习以及迁移学习。 | 3700        |
