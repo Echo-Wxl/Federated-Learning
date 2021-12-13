@@ -285,7 +285,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 ## 4.Frameworks
 
 
-| 框架名称  | 所属公司  | 开源地址               | 框架简介                                                     | github star |
+| 框架名称  | 所属公司  | 开源地址        | 框架简介                                                     | github star |
 | ------------------------ | ----------------------- | ---------------------------------------------- | :----------------------------------------------------------- | ----------- |
 | PySyft                   | OpenMined               | https://github.com/OpenMined/PySyft            | PySyft 是开源社区OpenMined推出的一个用于安全和私有深度学习的 Python 库。<br />它使用联邦学习、差分隐私和加密计算来解耦私人和敏感数据，可以在主要的深度学习框架中使用，<br />例如 TensorFlow 和PyTorch。PySyft 代表了在深度学习程序中启用可靠的隐私模型的首批尝试之一。 | 7800        |
 | FATE                     | 微众银行                | https://github.com/FederatedAI/FATE            | 微众银行AI部门研发了FATE（Federated AI Technology Enabler）联邦学习开源项目，是首个开源的联邦学习工业级框架。<br />目前FATE开源社区已汇聚了700多家企业、300余所高校等科研机构的开发者，是国内最大的联邦学习开源社区。<br />FATE项目使用多方安全计算 (MPC) 以及同态加密 (HE) 技术构建底层安全计算协议，以此支持不同种类的机器学习的安全计算，包括逻辑回归、树算法、深度学习（人工神经网络）和迁移学习等。<br />FATE目前支持三种类型联邦学习算法：横向联邦学习、纵向联邦学习以及迁移学习。 | 3700        |
@@ -298,7 +298,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 | Rosetta                  | 矩阵元                  | https://github.com/LatticeX-Foundation/Rosetta | Rosetta 是一个基于[TensorFlow](https://www.tensorflow.org/)开发的隐私计算框架，它将陆续集成密码学、联邦学习和可信执行环境等主流的隐私计算技术。<br />Rosetta 旨在为人工智能快速提供隐私保护技术解决方案，不需要用户掌握任何密码学、联邦学习和硬件安全执行环境领域的专业知识。<br />Rosetta 在用户接口层复用了 TensorFlow 的对外 API 从而使得用户可以以最低的改造成本将隐私保护功能集成到现有的 TensorFlow 程序中。 | 401         |
 | federated-learning-lib   | IBM                     | https://github.com/IBM/federated-learning-lib  | IBM federated learning是企业环境中用于联邦学习（FL）的Python框架。<br/>为FL提供了一个基本结构，可以向其中添加高级功能。它不依赖于任何特定的机器学习框架，并支持不同的学习拓扑，例如，共享聚合器和协议。<br />它支持深度神经网络（DNN）以及经典的机器学习技术，如线性回归和k-均值。这包括监督和非监督方法以及强化学习。 | 257         |
 | federated                | Google Research         | https://github.com/google-research/federated   | 联邦研究是与联邦学习和联邦分析相关的研究项目的集合。<br/>该存储库中包含的许多项目都使用TensorFlow Federated（TFF），这是一个用于机器学习和其他分散数据计算的开源框架。 | 243         |
-| Flower                   | Adap                    | https://github.com/adap/flower                 | Flower（flwr）是构建联邦学习系统的框架。flower的设计基于以下几个指导原则：<br/>可定制：联邦学习系统因用例而异。Flower允许根据每个用例的需要进行多种不同的配置。<br/>可扩展：Flower源于牛津大学的一个研究项目，因此它是在考虑AI研究的情况下建造的。可以扩展和覆盖许多组件以构建新的最先进的系统。<br/>框架不可知：不同的机器学习框架有不同的优势。Flower可以与任何机器学习框架一起使用，例如，PyTorch、TensorFlow、PyTorch Lightning、MXNet、scikit learn、TFLite，甚至可以与原始NumPy一起用于喜欢手工计算梯度的用户<br />可以理解：flower是用可维护性来写的。鼓励社区阅读和贡献代码库。 | 615         |
+| Flower                   | Adap                    | https://github.com/adap/flower                 | Flower是构建联邦学习系统的框架。flower的设计基于以下几个指导原则：<br/>可定制：联邦学习系统因用例而异。Flower允许根据每个用例的需要进行多种不同的配置。<br/>可扩展：Flower源于牛津大学的一个研究项目，因此它是在考虑AI研究的情况下建造的。可以扩展和覆盖许多组件以构建新的最先进的系统。<br/>框架不可知：不同的机器学习框架有不同的优势。Flower可以与任何机器学习框架一起使用，例如，PyTorch、TensorFlow、PyTorch Lightning、MXNet、scikit learn、TFLite，甚至可以与原始NumPy一起用于喜欢手工计算梯度的用户<br />可以理解：flower是用可维护性来写的。鼓励社区阅读和贡献代码库。 | 615         |
 
 ##  5.Company&Application
 
