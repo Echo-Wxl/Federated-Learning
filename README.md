@@ -32,9 +32,11 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
    3.1 [book](#3.1book)
 
-   3.2 [blogs](#3.2blogs)
+   3.2 [IndustryReport](3.2IndustryReport)
 
-   3.3 [slide](#3.3slide)
+   3.3 [blogs](#3.3blogs)
+
+   3.4 [slide](#3.4slide)
 
 4. [Frameworks](#4.Frameworks)
 
@@ -247,13 +249,20 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 ### 3.1book
 
 - 杨强，刘洋，程勇，康焱，陈天健，于涵，《联邦学习》，电子工业出版社，2020年5月
+- 彭南博，王虎等. 《联邦学习技术及实战》.  电子工业出版社. 2021年3月
+- 杨强，黄安埠，刘洋，陈天健等. 《联邦学习实战》. 电子工业出版社. 2021年5月
+- 王建宗，李泽远，何安珣. 《深入浅出联邦学习：原理与实践》. 机械工业出版社. 2021年5月
+
+### 3.2IndustryReport
+
 - [隐私机密计算蓝皮书](./src/book/隐私机密计算蓝皮书.pdf)
 - [隐私计算白皮书（2021）](./src/book/隐私计算白皮书（2021年）.pdf)
 - [2021隐私计算行业研究报告](./src/book/2021隐私计算行业研究报告.pdf)
 - [全球数字经济白皮书](./src/book/全球数字经济白皮书.pdf)
 - [2021全球联邦学习研究与应用趋势报告](./src/book/2021全球联邦学习研究与应用趋势报告.pdf)
+- [腾讯隐私计算白皮书](./src/book/腾讯隐私计算白皮书.pdf)
 
-### 3.2blogs
+### 3.3blogs
 
 - [杨强，刘洋，陈天健，童咏昕，“联邦学习”，中国计算机学会通讯](https://mp.weixin.qq.com/s?__biz=MjM5MTY5ODE4OQ==&mid=2651453786&idx=1&sn=1f189cbb8ff159428d65e100fdb5dc77&scene=21)
 - [中国信息通信研究院《隐私保护计算与合规应用研究报告 (2021年)](http://www.caict.ac.cn/kxyj/qwfb/ztbg/202104/P020210401408574284747.pdf)
@@ -263,7 +272,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 - [Online Comic from Google AI on Federated Learning](https://federated.withgoogle.com/)
 - [GDPR, Data Shotrage and AI , AAAI-19](https://aaai.org/Conferences/AAAI-19/invited-speakers/#yang)
 
-### 3.3slide
+### 3.4slide
 
 - [《隐私保护机器学习》slide](./src/ppt/README.md)
 - [面向隐私安全保密的联邦学习和迁移学习](./src/ppt/面向隐私安全保密的联邦学习与迁移学习.pdf)
@@ -275,37 +284,47 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 
 ## 4.Frameworks
 
-* [PySyft](https://github.com/OpenMined/PySyft)
-* [Tensorflow Federated](https://www.tensorflow.org/federated)
-* [FATE](https://github.com/FederatedAI/FATE); WeBank
-* [FedLearner](https://github.com/bytedance/fedlearner) ByteDance
-* [PaddleFL](https://github.com/PaddlePaddle/PaddleFL); Baidu 
-* [LEAF: A Benchmark for Federated Settings ](https://leaf.cmu.edu/)
-* [FedML:A Research Library and Benchmark for Federated Machine Learning](https://github.com/FedML-AI/FedML)
-* [XayNe:Open source framework for federated learning in Rust]( https://xaynet.webflow.io/)
-* [PyTorch Federated Learning](https://github.com/shaoxiongji/federated-learning)
-* [FedMA](https://github.com/IBM/federated-learning-lib); IBM
-* [federated](https://github.com/google-research/federated);Google Research
-* [Flower](https://github.com/adap/flower)
+| 框架名称                 | 所属公司                | 开源地址                                       | 框架简介                                                     | github star |
+| ------------------------ | ----------------------- | ---------------------------------------------- | :----------------------------------------------------------- | ----------- |
+| PySyft                   | OpenMined               | https://github.com/OpenMined/PySyft            | PySyft 是开源社区OpenMined推出的一个用于安全和私有深度学习的 Python 库。<br />它使用联邦学习、差分隐私和加密计算来解耦私人和敏感数据，可以在主要的深度学习框架中使用，<br />例如 TensorFlow 和PyTorch。PySyft 代表了在深度学习程序中启用可靠的隐私模型的首批尝试之一。 | 7800        |
+| FATE                     | 微众银行                | https://github.com/FederatedAI/FATE            | 微众银行AI部门研发了FATE（Federated AI Technology Enabler）联邦学习开源项目，是首个开源的联邦学习工业级框架。<br />目前FATE开源社区已汇聚了700多家企业、300余所高校等科研机构的开发者，是国内最大的联邦学习开源社区。<br />FATE项目使用多方安全计算 (MPC) 以及同态加密 (HE) 技术构建底层安全计算协议，以此支持不同种类的机器学习的安全计算，包括逻辑回归、树算法、深度学习（人工神经网络）和迁移学习等。<br />FATE目前支持三种类型联邦学习算法：横向联邦学习、纵向联邦学习以及迁移学习。 | 3700        |
+| TFF-TensorFlow Federated | Google                  | https://github.com/tensorflow/federated        | TensorFlow Federated project (TFF) 由谷歌公司开发和维护，是一个为联邦机器学习和其他计算方法在去中心化数据集上进行实验的开源框架。\|<br />TFF 让开发者能在自己的模型和数据上模拟实验现有的联邦学习算法，以及其他新颖的算法。TFF 提供的建造块也能够应用于去中心化数据集上，来实现非学习化的计算，例如聚合分析。<br />TFF 的接口有两层构成：联邦层（FL）应用程序接口（API）和联邦核心（FC）API。TFF 使得开发者能够声明和表达联邦计算，从而能够将其部署于各类运行环境。TFF 中包含的是一个单机的实验运行过程模拟器。 | 1700        |
+| TF-Encrypted             | 阿里巴巴<br />OpenMined | https://github.com/tf-encrypted/tf-encrypted   | TF Encrypted是TensorFlow中用于加密机器学习的框架。<br />利用KerasAPI的易用性，同时通过安全多方计算和同态加密对加密数据进行训练和预测。<br />TF Encrypted旨在使保护隐私的机器学习变得容易，而不需要密码学、分布式系统或高性能计算方面的专业知识。 | 963         |
+| CrypTen                  | facebook                | https://github.com/facebookresearch/CrypTen    | CrypTen是一个基于PyTorch的隐私保护机器学习框架。它的目标是使机器学习实践者能够使用安全的计算技术。它目前将安全多方计算作为其安全计算后端，并为ML研究人员提供三个主要好处：<br/>1、机器学习。该框架通过一个看起来和感觉都像PyTorch张量的CryptoSensor对象来展示协议。这允许用户使用类似于PyTorch中的自动微分和神经网络模块。<br/>2、CrypTen是基于库的。它实现了一个与PyTorch一样的张量库。这使得从业者更容易调试、实验和探索ML模型。<br/>3、该框架的构建考虑到了现实世界的挑战。CrypTen不会缩减或过度简化安全协议的实现。 | 973         |
+| FedML                    | USC                     | https://github.com/FedML-AI/FedML              | 美国南加州大学USC联合MIT、Stanford、MSU、UW-Madison、UIUC以及腾讯、微众银行等众多高校与公司联合发布了FedML联邦学习开源框架。<br />FedML是一个开放的研究库和基准，支持分布式训练、移动设备训练、独立仿真三种计算范例，可促进新的联合学习算法的开发和公平的性能比较。 | 945         |
+| Fedlearner               | 字节跳动                | https://github.com/bytedance/fedlearner        | 字节跳动联邦学习平台 Fedlearner 基于字节跳动在推荐和广告领域积累的机器学习建模技术和个性化推荐算法，<br />可以支持多类联邦学习模式，已经在电商、金融、教育等行业多个落地场景实际应用。 | 709         |
+| PaddleFL                 | 百度                    | https://github.com/PaddlePaddle/PaddleFL       | PaddleFL是一个基于百度飞桨（PaddlePaddle）的开源联邦学习框架。<br />PaddleFL提供很多联邦学习策略及其在计算机视觉、自然语言处理、推荐算法等领域的应用，例如，横向联邦学习（联邦平均、差分隐私、安全聚合）和纵向联邦学习（带privc的逻辑回归，带ABY3的神经网络）。<br />研究人员可以用PaddleFL复制和比较不同的联邦学习算法。 | 325         |
+| Rosetta                  | 矩阵元                  | https://github.com/LatticeX-Foundation/Rosetta | Rosetta 是一个基于[TensorFlow](https://www.tensorflow.org/)开发的隐私计算框架，它将陆续集成密码学、联邦学习和可信执行环境等主流的隐私计算技术。<br />Rosetta 旨在为人工智能快速提供隐私保护技术解决方案，不需要用户掌握任何密码学、联邦学习和硬件安全执行环境领域的专业知识。<br />Rosetta 在用户接口层复用了 TensorFlow 的对外 API 从而使得用户可以以最低的改造成本将隐私保护功能集成到现有的 TensorFlow 程序中。 | 401         |
+| federated-learning-lib   | IBM                     | https://github.com/IBM/federated-learning-lib  | IBM federated learning是企业环境中用于联邦学习（FL）的Python框架。<br/>为FL提供了一个基本结构，可以向其中添加高级功能。它不依赖于任何特定的机器学习框架，并支持不同的学习拓扑，例如，共享聚合器和协议。<br />它支持深度神经网络（DNN）以及经典的机器学习技术，如线性回归和k-均值。这包括监督和非监督方法以及强化学习。 | 257         |
+| federated                | Google Research         | https://github.com/google-research/federated   | 联邦研究是与联邦学习和联邦分析相关的研究项目的集合。<br/>该存储库中包含的许多项目都使用TensorFlow Federated（TFF），这是一个用于机器学习和其他分散数据计算的开源框架。 | 243         |
+| Flower                   | Adap                    | https://github.com/adap/flower                 | Flower（flwr）是构建联邦学习系统的框架。flower的设计基于以下几个指导原则：<br/>可定制：联邦学习系统因用例而异。Flower允许根据每个用例的需要进行多种不同的配置。<br/>可扩展：Flower源于牛津大学的一个研究项目，因此它是在考虑AI研究的情况下建造的。可以扩展和覆盖许多组件以构建新的最先进的系统。<br/>框架不可知：不同的机器学习框架有不同的优势。Flower可以与任何机器学习框架一起使用，例如，PyTorch、TensorFlow、PyTorch Lightning、MXNet、scikit learn、TFLite，甚至可以与原始NumPy一起用于喜欢手工计算梯度的用户<br />可以理解：flower是用可维护性来写的。鼓励社区阅读和贡献代码库。 | 615         |
 
 ##  5.Company&Application
 
-|     公司     |                          产品&地址                           |                    开源地址                    |
-| :----------: | :----------------------------------------------------------: | :--------------------------------------------: |
-|   微众银行   |           [联邦学习FATE](https://fate.fedai.org/)            |      https://github.com/FederatedAI/FATE       |
-|   蚂蚁金服   | [摩斯多方安全计算平台](https://antchain.antgroup.com/products/morse) |                       -                        |
-|     百度     | [联邦计算](https://anquan.baidu.com/product/federatedcomputing) |    https://gitee.com/paddlepaddle/PaddleFL     |
-|     腾讯     | [Angel PowerFL](https://cloud.tencent.com/solution/powerfl)  |                       -                        |
-| 百度安全部门 | [MesaTEE 安全计算平台](https://anquan.baidu.com/product/mesatee) |  https://github.com/apache/incubator-teaclave  |
-|   京东数科   |             [Fedlearn](https://www.jdcloud.com/)             |                       -                        |
-|   洞见智慧   |           [Insightone](https://www.insightone.cn/)           |                       -                        |
-|   华控清交   |      [PrivPy 多方安全计算平台](https://www.tsingj.com/)      |                       -                        |
-|   字节跳动   |    [Fedlearner](https://github.com/bytedance/fedlearner)     |    https://github.com/bytedance/fedlearner     |
-|   富数科技   |                [FMPC](https://www.fudata.cn/)                |                       -                        |
-|    矩阵元    |  [rosetta](https://www.matrixelements.com/product/rosetta)   | https://github.com/LatticeX-Foundation/Rosetta |
-|   数犊科技   |  [platone](https://www.matrixelements.com/product/platone)   |                       -                        |
-|   同盾科技   |           [同盾智邦平台](https://www.tongdun.cn/)            |                       -                        |
-|   致星科技   |            [星云Clustar](https://www.clustar.ai/)            |                       -                        |
+|   公司   |                          平台&地址                           |
+| :------: | :----------------------------------------------------------: |
+| 微众银行 |           [联邦学习FATE](https://fate.fedai.org/)            |
+| 蚂蚁金服 | [摩斯多方安全计算平台](https://antchain.antgroup.com/products/morse) |
+|   百度   |     [百度点石隐私计算平台](https://dianshi.baidu.com/#/)     |
+|   腾讯   | [Angel PowerFL](https://cloud.tencent.com/solution/powerfl)  |
+| 洞见智慧 |           [Insightone](https://www.insightone.cn/)           |
+| 华控清交 |      [PrivPy 多方安全计算平台](https://www.tsingj.com/)      |
+| 富数科技 |                [FMPC](https://www.fudata.cn/)                |
+|  矩阵元  |  [rosetta](https://www.matrixelements.com/product/rosetta)   |
+| 数犊科技 |  [Tusita多方安全隐私计算平台](https://www.sudoprivacy.com/)  |
+| 同盾科技 |           [同盾智邦平台](https://www.tongdun.cn/)            |
+| 致星科技 |            [星云Clustar](https://www.clustar.ai/)            |
+| 趣链科技 |               [BitMesh](https://bitxmesh.com/)               |
+| 蓝象智联 |             [GAIA-Edge](https://www.trustbe.cn/)             |
+| 锘崴科技 |     [锘崴信隐私计算平台](https://www.nvxclouds.com/home)     |
+|  华为云  | [可信智能计算服务 TICS](https://www.huaweicloud.com/product/tics.html) |
+|  联易融  |    [蜂密隐私计算平台](https://www.linklogis.com/welcome/)    |
+| 天冕科技 |      [天冕联邦学习平台](https://tianmiantech.com/home)       |
+|  度小满  | [貔貅隐私计算平台](http://fintech.duxiaoman.com/fintech/index) |
+| 星环科技 |        [星环联邦学习软件](https://www.transwarp.cn/)         |
+| 平安科技 |         [蜂巢联邦智能平台](https://tech.pingan.com/)         |
+|  光之树  |          [天机&云间](https://www.guangzhishu.com/)           |
+| 翼方健数 |             [翼数坊XDP](https://www.basebit.me/)             |
 
 
 
