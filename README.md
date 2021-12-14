@@ -21,12 +21,12 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
    - [IJCAI2020](#IJCAI2020)
    - [ICLR2021](#ICLR2021)		
    - [KDD2020](#KDD2020)
-
-2.2 [ByResearchArea](#2.2ByResearchArea)
-
-- [Survey](#Survey)
-- [VerticalFL](#VerticalFL)
-- [Non-IID](#Non-IID)
+   
+   2.2 [ByResearchArea](#2.2ByResearchArea)
+   
+   - [Survey](#Survey)
+   - [VerticalFL](#VerticalFL)
+   - [Non-IID](#Non-IID)
 
 3. [Tutorials](#3.Tutorials )
 
