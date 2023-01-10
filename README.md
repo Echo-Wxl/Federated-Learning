@@ -172,6 +172,9 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [FedCD: Improving Performance in non-IID Federated Learning](https://arxiv.org/pdf/2006.09637) [KDD20 Workshop]
 * [Resource-Constrained Federated Learning with Heterogeneous Labels and Models](https://arxiv.org/pdf/2011.03206) [KDD2020 Workshop]
 
+#### SoCC2022
+* [Pisces: Efficient Federated Learning via Guided Asynchronous Training](https://dl.acm.org/doi/abs/10.1145/3542929.3563463)
+
 ###  2.2ByResearchArea
 
 ####  Survey
@@ -192,6 +195,7 @@ A collection of research papers,  tutorials , blogs and Frameworks on FL
 * [Federated Learning for 6G Communications: Challenges, Methods, and Future Directions](https://arxiv.org/pdf/2006.02931.pdf)
 * [Federated Learning for Wireless Communications: Motivation, Opportunities and Challenges](https://arxiv.org/abs/1908.06847)
 * [联邦学习算法综述，王健宗，孔令炜](http://www.infocomm-journal.com/bdr/CN/10.11959/j.issn.2096-0271.2020055)
+* [Towards Efficient Synchronous Federated Training: A Survey on System Optimization Strategies](https://ieeexplore.ieee.org/document/9780218)
 
 ####  VerticalFL
 
