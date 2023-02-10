@@ -352,13 +352,22 @@ FedAvg 算法是随机选择参与训练的客户端的。但在网络结构复�
 
 ## 参考文献
 
-[^1]:The official GDPR website[A/OL].EU Commission (2020-03-07). https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_en.
-[^2]:California consumer privacy act. bill no. 375 privacy：personalinformation： businesses. https://leginfo.legislature.ca.gov.2018:06-28
-[^3]:新华网. (受权发布)中华人民共和国网络安全法[OL].[2020-02-17]. http://www.xinhuanet.com/politics/2016-11/07/c_1119867015.html
-[^4]:王健宗，孔令炜，黄章成，陈霖捷，刘懿，何安珣，肖京．联邦学习算法综述．大数据. https://kns.cnki.net/kcms/detail/10.1321.G2.20200821.1708.004.html
-[^5]:[Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)
-[^6]:[Federated Machine Learning: Concept and Applications](https://dl.acm.org/citation.cfm?id=3298981)
-[^7]:杨强,刘洋,程勇,等.联邦学习[M].电子工业出版社:北京,2020:2
-[^8]:杨强,黄安埠,刘洋,陈天健. 联邦学习实战.电子工业出版社. 北京. 2021.05
-[^9]:[A survey on security and privacy of federated learning](https://www.sciencedirect.com/science/article/pii/S0167739X20329848)
-[^10]:[Federated Learning Challenges, Methods, and Future Directions](https://arxiv.org/abs/1908.07873)
+[1] The official GDPR website[A/OL].EU Commission (2020-03-07). https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_en.
+
+[2] California consumer privacy act. bill no. 375 privacy：personalinformation： businesses. https://leginfo.legislature.ca.gov.2018:06-28
+
+[3] 新华网. (受权发布)中华人民共和国网络安全法[OL].[2020-02-17]. http://www.xinhuanet.com/politics/2016-11/07/c_1119867015.html
+
+[4] 王健宗，孔令炜，黄章成，陈霖捷，刘懿，何安珣，肖京．联邦学习算法综述．大数据. https://kns.cnki.net/kcms/detail/10.1321.G2.20200821.1708.004.html
+
+[5] [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977)
+
+[6] [Federated Machine Learning: Concept and Applications](https://dl.acm.org/citation.cfm?id=3298981)
+
+[7] 杨强,刘洋,程勇,等.联邦学习[M].电子工业出版社:北京,2020:2
+
+[8] 杨强,黄安埠,刘洋,陈天健. 联邦学习实战.电子工业出版社. 北京. 2021.05
+
+[9] [A survey on security and privacy of federated learning](https://www.sciencedirect.com/science/article/pii/S0167739X20329848)
+
+[10] [Federated Learning Challenges, Methods, and Future Directions](https://arxiv.org/abs/1908.07873)
